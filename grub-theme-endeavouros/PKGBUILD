@@ -3,7 +3,7 @@
 # Maintainer: EndeavourOS-Team <info@endeavouros.com>
 pkgname=grub2-theme-endeavouros
 pkgver=20210131
-pkgrel=1
+pkgrel=2
 pkgdesc='EndeavourOS grub2 theme'
 arch=(any)
 url='https://github.com/endeavouros-team/'
@@ -17,5 +17,7 @@ sha512sums=('SKIP')
 
 package() {
     install -dm 755 $pkgdir/boot/grub/themes/EndeavourOS
+        install -dm 755 $pkgdir/boot/grub/themes/EndeavourOS-old
     cp -r --no-preserve=ownership grub2-theme-endeavouros/EndeavourOS $pkgdir/boot/grub/themes/
+    cp -r --no-preserve=ownership grub2-theme-endeavouros/EndeavourOS-old $pkgdir/boot/grub/themes/
 }
