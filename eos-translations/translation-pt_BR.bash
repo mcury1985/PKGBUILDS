@@ -255,3 +255,5 @@ _tr_add2 after_install_ewtip2     "Escolher Papel de Parede"                    
 #       - line 72:  changed text of 'after_install_ewtip'
 #       - line 249: changed text of 'after_install_ew2'
 #       - line 250: changed text of 'after_install_ewtip2'
+
+
